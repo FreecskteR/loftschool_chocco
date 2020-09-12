@@ -308,3 +308,13 @@ setInterval(function () {
 // var audioNM = new Audio("nm.mp3");
 // audioNM.loop = false;
 // audioNM.autoplay = false;
+
+
+let endButton = document.querySelector('#p_modal_button4--');
+
+endButton.addEventListener('click', ()=>{
+    localStorage.setItem('finished', 'true');
+})
+if(localStorage.getItem('test')){
+    document.location.href = 'http://www.yandex.ru';
+}
